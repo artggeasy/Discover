@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body{
   /*background: url(./assets/bg-desktop.jpg);
   background-repeat: no-repeat;
@@ -11,8 +16,9 @@ body *{
 }
 #container{
   width: 360px;
-  border: 1px solid red;
-  margin:auto
+   /*margin tbm pode fucionar assim: margin:top right bottom left; quando só tem duas tipo: margin:50px auto; seria como se "50px" fosse - top & bottom - enquanto
+  "auto' seria - "auto" o right e left*/
+  margin: 56px auto 0px;
 }
 #profile{
   text-align: center;
