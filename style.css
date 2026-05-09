@@ -22,12 +22,30 @@ body *{
 }
 #profile{
   text-align: center;
+  padding: 24px;
 }
 #profile img{
-    display: inline;
     width: 112px;
 }
 #profile p{
   font-weight: 500;
   line-height: 24px;
+  margin-top: 8px;
+}
+
+/*Links - Listas*/
+ul{
+  list-style: none; /*serve para tirar os "." da lista*/
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+
+  background: rgba(255,255,255,0.1);/* Definindo aqui o background do meu bloco da lista  nas listas*/
+  border: 1px solid rgba(255,255,255,0.5);/* Definindo aqui a borda do meu bloco da lista  nas listas*/
 }
