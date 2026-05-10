@@ -19,6 +19,7 @@ body *{
    /*margin tbm pode fucionar assim: margin:top right bottom left; quando só tem duas tipo: margin:50px auto; seria como se "50px" fosse - top & bottom - enquanto
   "auto' seria - "auto" o right e left*/
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 #profile{
   text-align: center;
@@ -37,8 +38,9 @@ body *{
 ul{
   list-style: none; /*serve para tirar os "." da lista*/
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: column; /* minha lista organizada em colunas */
+  gap: 16px;/* meus elementos possui uma distancia "16px" para cada item da lista */
+  padding: 24px 0;;
 }
 ul li a{
   display: flex;
@@ -48,4 +50,34 @@ ul li a{
 
   background: rgba(255,255,255,0.1);/* Definindo aqui o background do meu bloco da lista  nas listas*/
   border: 1px solid rgba(255,255,255,0.5);/* Definindo aqui a borda do meu bloco da lista  nas listas*/
+  text-decoration: none; /*serve para tirar o traço debaixo da frase do link*/
+  font-weight: 500;
+  /*transition: all .5s; /* transição para suavizar essas mudanças visuais, definindo a duração e as propriedades a serem animadas.*/
+  transition: background .2s; /* transição para suavizar essas mudanças visuais entre os backgrounds dos botões.*/
+}
+/*pseudo - selector: quando eu passar o mouse em cima para alterar propriedades como borda e cor de fundo*/ 
+ul li a:hover{
+  background: rgba(255,255,255,0.5);
+  border: 1.5px solid white
+}
+/*social-links*/
+#social_links{
+  display: flex;
+  border: 1px solid red;
+  padding: 24px 0;
+  justify-content: center;
+  font-size: 24px;
+}
+#social_links a{
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  align-items: center;
+  border: solid 1px red;
+  transition: background .1s;
+  border-radius: 50%;
+}
+
+#social_links a:hover{
+  background: rgba(255,255,255,0.2);
 }
